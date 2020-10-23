@@ -1,5 +1,7 @@
-
 // 题目链接：https://leetcode-cn.com/problems/rotate-array/
+
+// 题目链接：https://leetcode.com/problems/rotate-array/
+
 void reverse(int *nums, int start, int end)
 {
 	int tmp;

@@ -1,5 +1,7 @@
 // 题目地址：https://leetcode-cn.com/problems/container-with-most-water/
 
+// 题目地址：https://leetcode.com/problems/container-with-most-water/
+
 int maxArea(int *height, int heightSize)
 {
 	int i = 0;
