@@ -1,3 +1,7 @@
+//题目地址：https://leetcode-cn.com/problems/design-circular-deque/
+
+//题目地址：https://leetcode.com/problems/design-circular-deque/
+
 typedef struct {
 	int *data;
 	int size;
