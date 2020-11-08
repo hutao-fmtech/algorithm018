@@ -1,3 +1,7 @@
+//题目地址： https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
+
+//题目地址：https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
+
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -29,6 +33,7 @@ class Solution {
 
 		root->left = myBuildTree(preorder, preorder_left_index + 1, preorder_left_index + size_left_subtree,
 					 inorder, inorder_left_index, inorder_root_index);
+
 		root->right = myBuildTree(preorder, preorder_left_index + size_left_subtree + 1, preorder_right_index,
 					  inorder, inorder_root_index + 1, inorder_right_index);
 		return root;
