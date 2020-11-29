@@ -12,3 +12,5 @@
 
 
 **[一个总结的不错的算法总结](https://www.cnblogs.com/steven_oyj/category/246990.html)**
+
+> [五大常用算法之二：动态规划算法](https://www.cnblogs.com/steven_oyj/archive/2010/05/22/1741374.html)
