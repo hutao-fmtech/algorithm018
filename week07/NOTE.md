@@ -9,7 +9,7 @@
 1. AVL：TODO
 2. 红黑树：TODO
 
-**查并集**
+**并查集**
 1. 查并集相对比较简单，只需要记住它的几个API：`union_nodes`、`get_count`、`connected`。可以强记下面模版
 
 ```c++
