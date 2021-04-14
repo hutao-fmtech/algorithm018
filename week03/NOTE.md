@@ -2,7 +2,7 @@
 
 - 递归模版
 
-```c
+```c++
 void recursion(int level, int param) {
     // 1. recursion termimator
     if (level > MAXLEVEL) {
