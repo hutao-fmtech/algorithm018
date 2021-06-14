@@ -4,7 +4,7 @@
 
 ```c++
 void recursion(int level, int param) {
-    // 1. recursion termimator
+    // 1. recursion terminator
     if (level > MAXLEVEL) {
         // post result
         return;
