@@ -8,16 +8,21 @@ int maxArea(int *height, int heightSize)
 	int j = heightSize - 1;
 	int ans = 0;
 	int area = 0;
-	while (i < j) {
-		if (height[i] <= height[j]) {
+	while (i < j)
+	{
+		if (height[i] <= height[j])
+		{
 			area = height[i] * (j - i);
 			++i;
-		} else {
+		}
+		else
+		{
 			area = height[j] * (j - i);
 			--j;
 		}
 
-		if (area > ans) {
+		if (area > ans)
+		{
 			ans = area;
 		}
 	}

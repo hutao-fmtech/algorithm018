@@ -7,10 +7,14 @@
  */
 int *plusOne(int *digits, int digitsSize, int *returnSize)
 {
-	for (int i = digitsSize - 1; i >= 0; i--) {
-		if (9 == digits[i]) {
+	for (int i = digitsSize - 1; i >= 0; i--)
+	{
+		if (9 == digits[i])
+		{
 			digits[i] = 0;
-		} else {
+		}
+		else
+		{
 			digits[i]++;
 			int *ans = malloc(sizeof(int) * digitsSize);
 			memcpy(ans, digits, digitsSize);

@@ -1,19 +1,24 @@
 // https://leetcode-cn.com/problems/group-anagrams/
 
-class Solution {
-    public:
-	vector<vector<string> > groupAnagrams(vector<string> &strs)
+class Solution
+{
+public:
+	vector<vector<string>> groupAnagrams(vector<string> &strs)
 	{
-		vector<vector<string> > res;
-		int sub = 0; //结果vector的下标值，相同的str，具有相同的下标。
-		string tmp; //临时string
+		vector<vector<string>> res;
+		int sub = 0;					 //结果vector的下标值，相同的str，具有相同的下标。
+		string tmp;						 //临时string
 		unordered_map<string, int> work; //判断排序后单词是否存在，即字母组成是否一致
-		for (auto str : strs) {
+		for (auto str : strs)
+		{
 			tmp = str;
 			sort(tmp.begin(), tmp.end());
-			if (work.count(tmp)) {
+			if (work.count(tmp))
+			{
 				res[work[tmp]].push_back(str);
-			} else {
+			}
+			else
+			{
 				vector<string> vec(1, str);
 				res.push_back(vec);
 				work[tmp] = sub++;

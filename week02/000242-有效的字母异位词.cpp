@@ -12,21 +12,26 @@ using std::endl;
 using std::string;
 using std::unordered_map;
 
-class Solution {
-    public:
+class Solution
+{
+public:
 	bool isAnagram(string s, string t)
 	{
 		unordered_map<char, int> map;
-		if (s.size() != t.size()) {
+		if (s.size() != t.size())
+		{
 			return false;
 		}
-		for (int i = 0; i < s.size(); i++) {
+		for (int i = 0; i < s.size(); i++)
+		{
 			map[s[i]]++;
 			map[t[i]]--;
 		}
 
-		for (auto item : map) {
-			if (item.second != 0) {
+		for (auto item : map)
+		{
+			if (item.second != 0)
+			{
 				return false;
 			}
 		}
@@ -40,9 +45,12 @@ int main()
 	string s = "abd";
 	string t = "bda";
 	Solution *solu = new Solution();
-	if (solu->isAnagram(s, t)) {
+	if (solu->isAnagram(s, t))
+	{
 		cout << "is Anagram" << endl;
-	} else {
+	}
+	else
+	{
 		cout << "not is Anagram" << endl;
 	}
 }

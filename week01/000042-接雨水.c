@@ -11,19 +11,28 @@ int trap(int *height, int heightSize)
 
 	int ans = 0;
 
-	while (l < r) {
-		if (height[l] < height[r]) {
-			if (height[l] > l_lvl) {
+	while (l < r)
+	{
+		if (height[l] < height[r])
+		{
+			if (height[l] > l_lvl)
+			{
 				l_lvl = height[l];
-			} else {
+			}
+			else
+			{
 				ans += (l_lvl - height[l]);
 			}
 			l++;
-
-		} else {
-			if (height[r] > r_lvl) {
+		}
+		else
+		{
+			if (height[r] > r_lvl)
+			{
 				r_lvl = height[r];
-			} else {
+			}
+			else
+			{
 				ans += (r_lvl - height[r]);
 			}
 			r--;

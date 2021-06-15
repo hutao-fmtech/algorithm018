@@ -5,7 +5,8 @@
 void reverse(int *nums, int start, int end)
 {
 	int tmp;
-	while (start < end) {
+	while (start < end)
+	{
 		tmp = nums[start];
 		nums[start] = nums[end];
 		nums[end] = tmp;
@@ -16,7 +17,8 @@ void reverse(int *nums, int start, int end)
 
 void rotate(int *nums, int numsSize, int k)
 {
-	if (NULL == nums || 0 == k) {
+	if (NULL == nums || 0 == k)
+	{
 		return;
 	}
 	k %= numsSize;
